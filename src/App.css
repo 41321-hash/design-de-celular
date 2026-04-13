@@ -1,0 +1,68 @@
+:root {
+  --primary-green: #064e3b; /* Verde escuro do botão */
+  --light-bg: #f9fafb;
+  --text-gray: #6b7280;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  font-family: sans-serif;
+}
+
+.login-card {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.brand-title {
+  background-color: #d1fae5; /* Fundo verde claro do título */
+  display: inline-block;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 2px 8px;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+  color: var(--text-gray);
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background-color: #f3f4f6;
+}
+
+.btn-signin {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Estilos adicionais para links e divisores... */
