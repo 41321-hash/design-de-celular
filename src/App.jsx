@@ -7,6 +7,7 @@ function App() {
 
   return (
     <div className="container-geral">
+      
       <div className="login-card">
         <h1 className="logo">EMERALD HARVEST</h1>
         <p className="subtitle">Welcome back to the modern agrarian lifestyle.</p>
