@@ -1,35 +1,34 @@
-:root {
-  --primary-green: #064e3b; /* Verde escuro do botão */
-  --light-bg: #f9fafb;
-  --text-gray: #6b7280;
-}
-
-.container {
+/* App.css */
+.container-geral {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f3f4f6;
-  font-family: sans-serif;
+  background-color: #f3f5f7; /* Fundo cinza bem clarinho */
+  font-family: 'Inter', sans-serif;
 }
 
 .login-card {
   background: white;
   padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 16px;
   width: 100%;
-  max-width: 400px;
+  max-width: 380px;
   text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
-.brand-title {
-  background-color: #d1fae5; /* Fundo verde claro do título */
-  display: inline-block;
+.logo {
+  color: #064232; /* Verde escuro da imagem */
+  font-size: 22px;
   font-weight: 800;
-  letter-spacing: 1px;
-  padding: 2px 8px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 30px;
 }
 
 .input-group {
@@ -37,32 +36,88 @@
   margin-bottom: 20px;
 }
 
-.input-group label {
-  display: block;
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
   font-size: 10px;
-  font-weight: bold;
-  color: var(--text-gray);
-  margin-bottom: 5px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.forgot {
+  font-size: 9px;
+  color: #666;
+  text-decoration: none;
 }
 
 input {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #e5e7eb;
-  border-radius: 6px;
-  background-color: #f3f4f6;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f0f2f4; /* Cinza dos inputs */
+  box-sizing: border-box;
 }
 
 .btn-signin {
   width: 100%;
   padding: 14px;
-  background-color: var(--primary-green);
+  background-color: #064232;
   color: white;
   border: none;
-  border-radius: 6px;
-  font-weight: bold;
+  border-radius: 8px;
+  font-weight: 600;
   cursor: pointer;
   margin-top: 10px;
 }
 
-/* Estilos adicionais para links e divisores... */
+.divider {
+  margin: 25px 0;
+  border-top: 1px solid #eee;
+  position: relative;
+}
+
+.divider span {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 0 10px;
+  font-size: 10px;
+  color: #aaa;
+}
+
+.social-login {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.btn-social {
+  flex: 1;
+  padding: 12px;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.signup-text {
+  font-size: 12px;
+  color: #444;
+}
+
+.signup-text a {
+  color: #064232;
+  font-weight: 700;
+  text-decoration: none;
+}
