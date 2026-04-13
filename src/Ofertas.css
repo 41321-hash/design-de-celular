@@ -1,0 +1,165 @@
+/* Ofertas.css */
+
+.offers-container {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  background: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 70px;
+  font-family: 'Inter', sans-serif;
+}
+
+.offers-header {
+  padding: 16px;
+  background: white;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 4px;
+  color: #064232;
+}
+
+.offers-header h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #064232;
+  margin: 0;
+  flex: 1;
+}
+
+.cart-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 16px;
+  flex: 1;
+}
+
+.offer-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.offer-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.offer-image {
+  font-size: 48px;
+  margin-bottom: 8px;
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.offer-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #e74c3c;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.offer-card h3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  margin: 8px 0;
+}
+
+.offer-prices {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #064232;
+}
+
+.original {
+  font-size: 11px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 8px;
+  background: #064232;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.add-btn:hover {
+  background: #053622;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  z-index: 50;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  flex: 1;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.nav-btn:hover {
+  color: #064232;
+}

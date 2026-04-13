@@ -1,0 +1,331 @@
+/* Perfil.css */
+
+.perfil-container {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  background: #fbfdff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 90px;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+/* Header */
+.perfil-header {
+  padding: 16px;
+  background: #fbfdff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.back-btn, .add-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #064232;
+  margin: 0;
+}
+
+.perfil-content {
+  flex: 1;
+  padding: 0 20px 20px 20px;
+}
+
+/* User Profile Header */
+.user-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.user-avatar-large {
+  width: 64px;
+  height: 64px;
+  background: #064232;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(6, 66, 50, 0.15);
+}
+
+.user-details h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #111;
+  margin: 0 0 4px 0;
+  letter-spacing: -0.5px;
+}
+
+.user-details p {
+  font-size: 14px;
+  color: #7987a1;
+  margin: 0;
+}
+
+/* Emerald Points Banner */
+.emerald-points-banner {
+  background: linear-gradient(135deg, #064232, #0a6950);
+  border-radius: 16px;
+  padding: 20px;
+  color: white;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 24px rgba(6, 66, 50, 0.2);
+}
+
+.points-label {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.points-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.points-value {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.points-level {
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(255,255,255,0.2);
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+/* Settings List */
+.settings-list {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #f0f0f0;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.settings-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.settings-item:last-child {
+  border-bottom: none;
+}
+
+.settings-item-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+}
+
+.settings-item-arrow {
+  color: #ccc;
+  font-weight: bold;
+}
+
+/* Security Banner Card */
+.security-card {
+  background: #eaf1ed; /* Lighter shade of green for background */
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.security-icon-wrapper {
+  background: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(6, 66, 50, 0.05);
+}
+
+.security-card h3 {
+  color: #064232;
+  font-size: 11px;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  letter-spacing: 0.5px;
+}
+
+.security-card p {
+  color: #064232;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  opacity: 0.85;
+}
+
+/* Saved Cards Section */
+.saved-cards-section {
+  margin-bottom: 32px;
+}
+
+.saved-cards-section h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #111;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.5px;
+}
+
+.payment-card {
+  background: white;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+
+.card-logo {
+  width: 50px;
+  height: 34px;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+.master-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.card-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-number {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 2px;
+}
+
+.card-exp {
+  font-size: 13px;
+  color: #777;
+}
+
+.edit-btn {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button Add new method */
+.btn-add-method {
+  width: 100%;
+  padding: 16px;
+  background: white;
+  border: 1.5px dashed #064232;
+  border-radius: 12px;
+  color: #064232;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-add-method:hover {
+  background: #f0f4f8;
+}
+
+/* Bottom Nav - Repeated logic for scoping */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  z-index: 50;
+  max-width: 420px;
+  margin: 0 auto;
+  gap: 10px;
+  box-shadow: 0 -10px 20px rgba(0,0,0,0.02);
+}
+
+.nav-item {
+  flex: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  border: 1.5px dashed #4285f4;
+  border-radius: 8px;
+  color: #7987a1;
+  width: 100%;
+  transition: all 0.2s;
+  background: #fbfdff;
+}
+
+.nav-item-content span {
+  font-size: 8px;
+  font-weight: 800;
+  margin-top: 6px;
+  letter-spacing: 0.2px;
+}
+
+.nav-item.active .nav-item-content {
+  background: #fbfdff;
+  border: 1.5px dashed #064232;
+  color: #064232;
+}

@@ -1,0 +1,356 @@
+/* CriarConta.css */
+
+.criar-conta-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #f0f4f8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.criar-conta-content {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 1024px) {
+  .criar-conta-content {
+    max-width: 600px;
+    padding: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .criar-conta-content {
+    max-width: 500px;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .criar-conta-content {
+    max-width: 100%;
+    width: 90%;
+    padding: 30px 25px;
+  }
+}
+
+
+
+.logo-text {
+  font-size: 32px;
+  font-weight: 700;
+  color: #064232;
+  margin: 0 0 24px 0;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.header-section {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.header-section h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #064232;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+}
+
+.header-section p {
+  font-size: 16px;
+  color: #999;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Form */
+.signup-form {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #666;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .form-group input {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+}
+
+.form-group input::placeholder {
+  color: #bbb;
+}
+
+.form-group input:focus {
+  outline: none;
+  background-color: #fff;
+  border-color: #064232;
+  box-shadow: 0 0 0 2px rgba(6, 66, 50, 0.1);
+}
+
+.form-group input.input-error {
+  background-color: #fee;
+  border-color: #f5a5a5;
+}
+
+.error-msg {
+  display: block;
+  font-size: 12px;
+  color: #e74c3c;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+/* Sign Up Button */
+.btn-signup {
+  width: 100%;
+  padding: 18px;
+  background-color: #064232;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 600px) {
+  .btn-signup {
+    padding: 14px;
+    font-size: 14px;
+  }
+}
+
+.btn-signup:hover:not(:disabled) {
+  background-color: #053622;
+  box-shadow: 0 4px 12px rgba(6, 66, 50, 0.25);
+}
+
+.btn-signup:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Divider */
+.divider {
+  margin: 35px 0;
+  border-top: 1px solid #eee;
+  position: relative;
+}
+
+.divider span {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 0 15px;
+  font-size: 12px;
+  color: #bbb;
+  font-weight: 700;
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+}
+
+/* Social Login */
+.social-login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.social-btn {
+  padding: 16px 18px;
+  border: 1.5px solid #e0e0e0;
+  background: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .social-btn {
+    padding: 12px 14px;
+    font-size: 12px;
+  }
+}
+
+.social-btn:hover {
+  border-color: #064232;
+  background: #f9f9f9;
+}
+
+.google-btn:hover {
+  border-color: #4285f4;
+}
+
+.apple-btn:hover {
+  border-color: #000;
+}
+
+.social-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Login Link */
+.login-link {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.login-link p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-link a {
+  color: #064232;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.login-link a:hover {
+  color: #053622;
+  text-decoration: underline;
+}
+
+.login-btn {
+  background: none;
+  border: none;
+  color: #064232;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 4px;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.3s ease;
+}
+
+.login-btn:hover {
+  color: #053622;
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .criar-conta-content {
+    padding: 24px 20px;
+  }
+
+  .header-section h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .criar-conta-container {
+    padding: 10px;
+  }
+  .criar-conta-content {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 22px 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  }
+  .logo-text {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .header-section {
+    margin-bottom: 20px;
+  }
+  .header-section h2 {
+    font-size: 20px;
+  }
+  .header-section p {
+    font-size: 12px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .form-group label {
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+  .form-group input {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  .btn-signup {
+    padding: 12px;
+    font-size: 13px;
+  }
+  .divider {
+    margin: 20px 0;
+  }
+  .social-login {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .social-btn {
+    padding: 10px 12px;
+    font-size: 11px;
+  }
+  .social-logo {
+    width: 20px;
+    height: 20px;
+  }
+  .login-link {
+    padding-top: 10px;
+  }
+  .login-link p {
+    font-size: 12px;
+  }
+}

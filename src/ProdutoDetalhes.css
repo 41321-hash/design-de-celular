@@ -1,0 +1,250 @@
+/* ProdutoDetalhes.css */
+
+.produto-container {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  background: #fbfdff;
+  min-height: 100vh;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 90px;
+}
+
+.produto-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.produto-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60vh;
+  background: linear-gradient(180deg, rgba(251, 253, 255, 0) 0%, rgba(251, 253, 255, 0.4) 60%, rgba(251, 253, 255, 1) 100%);
+  z-index: 2;
+}
+
+.produto-header {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  max-width: 388px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.back-btn {
+  background: none;
+  border: 1px dashed #4285f4;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.header-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #064232;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlap Content */
+.produto-content-overlap {
+  position: relative;
+  z-index: 5;
+  margin-top: 50vh;
+  padding: 0 20px;
+}
+
+.badge-tag {
+  display: inline-block;
+  background-color: #5c3029;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.produto-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.produto-name-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.produto-title {
+  font-size: 28px;
+  font-weight: 500;
+  color: #064232;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+.produto-subtitle {
+  font-size: 32px;
+  font-weight: 800;
+  color: #064232;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.produto-price-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.price-label {
+  font-size: 9px;
+  font-weight: 700;
+  color: #7987a1;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
+.price-value-container {
+  display: flex;
+  align-items: baseline;
+  color: #064232;
+}
+
+.price-currency {
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 2px;
+}
+
+.price-value {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.price-unit {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  margin-left: 2px;
+}
+
+.info-box {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.info-box h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #064232;
+  margin: 0 0 16px 0;
+}
+
+.info-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* Bottom Navigation reused from Home */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  z-index: 50;
+  max-width: 420px;
+  margin: 0 auto;
+  gap: 10px;
+  box-shadow: 0 -10px 20px rgba(0,0,0,0.02);
+}
+
+.nav-item {
+  flex: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  border: 1.5px dashed #4285f4;
+  border-radius: 8px;
+  color: #7987a1;
+  width: 100%;
+  transition: all 0.2s;
+  background: #fbfdff;
+}
+
+.nav-item-content span {
+  font-size: 8px;
+  font-weight: 800;
+  margin-top: 6px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
+.nav-item.active .nav-item-content {
+  background: #fbfdff;
+  border: 1.5px dashed #064232;
+  color: #064232;
+}
